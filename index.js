@@ -9,22 +9,13 @@ async function converterMoedas() {
 
   let dolar = moedas.USDBRL.high
   let euro = moedas.EURBRL.high
-  let inputValorEmReais = document.getElementById("input").value //.replace('.', "")
+  let inputValorEmReais = document.getElementById("input").value
   let inputMoedas = document.getElementById("input-moedas")
   let textoReal = document.getElementById("texto-real")
-
-
   let moedaReal = JSON.stringify(inputValorEmReais).replace('.', "")
-  console.log(moedaReal)
-
   let real = JSON.parse(moedaReal).replace(',', "")
-  console.log(real)
-
   let rrr = parseInt(real)
-  console.log(rrr)
-
   let divide = rrr / 100
-  console.log(divide)
 
   if (inputValorEmReais == "") {
     inputMoedas.innerHTML = '0,00'
@@ -59,6 +50,7 @@ function trocaDeMoeda() {
   }
   converterMoedas()
 }
+
 
 botao.addEventListener("click", converterMoedas)
 select.addEventListener("change", trocaDeMoeda)
