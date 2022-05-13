@@ -86,7 +86,7 @@ h1 {
 }
 
 #botao:active {
-opacity: 0.6;
+  opacity: 0.6;
 }
 
 #caixa-interna {
@@ -96,7 +96,7 @@ opacity: 0.6;
   padding-bottom: 12px;
 }
 
-.caixa-menor{
+.caixa-menor {
   text-align: center;
 }
 
@@ -138,4 +138,6 @@ opacity: 0.6;
 
 footer {
   text-align: center;
+  font-style: italic;
+  font-weight: 200;
 }

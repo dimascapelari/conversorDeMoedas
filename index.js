@@ -14,8 +14,8 @@ async function converterMoedas() {
   let textoReal = document.getElementById("texto-real")
   let moedaReal = JSON.stringify(inputValorEmReais).replace('.', "")
   let real = JSON.parse(moedaReal).replace(',', "")
-  let rrr = parseInt(real)
-  let divide = rrr / 100
+  let numeroInteiro = parseInt(real)
+  let divide = numeroInteiro / 100
 
   if (inputValorEmReais == "") {
     inputMoedas.innerHTML = '0,00'
